@@ -1,6 +1,5 @@
 plugins {
     java
-    id("org.springframework.boot") version "2.6.4"
 }
 java{
     toolchain{
