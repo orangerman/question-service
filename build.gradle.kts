@@ -1,5 +1,6 @@
 plugins {
     java
+    id("org.springframework.boot") version "2.6.4"
 }
 java{
     toolchain{
@@ -12,9 +13,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit:junit-bom:5.8.2")
-    testImplementation("org.junit.jupiter:junit-jupiter-api")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    implementation("org.springframework.boot:spring-boot-starter:2.6.4")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.6.4")
+    implementation("org.springframework.boot:spring-boot-starter-actuator:2.6.4")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.4")
+
 }
 
 tasks {
