@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-
 @Slf4j
 @RestController
 @RequestMapping("/testSync")
@@ -34,7 +33,6 @@ public class TestSyncController {
             e.printStackTrace();
         }
     }
-
 
 }
 

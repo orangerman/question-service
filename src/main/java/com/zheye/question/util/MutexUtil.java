@@ -5,11 +5,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 同步锁工具类.
+ *
  * @author fzq
  */
 public class MutexUtil {
 
-   private static final Map<Object, ReentrantLock> mutexCache = new ConcurrentHashMap<>();
+    private static final Map<Object, ReentrantLock> mutexCache = new ConcurrentHashMap<>();
 
     public static <T> void exec(T key, Runnable runnable) {
         ReentrantLock mutex4Key = null;
