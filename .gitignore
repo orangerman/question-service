@@ -4,3 +4,5 @@ gradlew.bat
 .gradle
 .idea
 build
+
+application-*.yml
