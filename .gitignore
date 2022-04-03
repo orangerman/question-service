@@ -6,3 +6,4 @@ gradlew.bat
 build
 
 application-*.yml
+!application-env.template.yml
