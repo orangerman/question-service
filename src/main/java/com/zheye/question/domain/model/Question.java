@@ -13,7 +13,7 @@ public class Question {
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
-    private String id;
+    private Integer id;
     private String questionerId;
     private String title;
     private String detail;
@@ -28,7 +28,7 @@ public class Question {
         this.detail = detail;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
